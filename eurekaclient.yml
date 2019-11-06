@@ -1,23 +1,9 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 server:
-  port: 8888
+  port: 8763
 spring:
   application:
-    name: config
-  profiles:
-    active: prod
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/lynnlovemin/SpringCloudLesson.git
-          searchPaths: µÚ09¿Î/config
-          username: 123456
-          password: 123456
-      label: master
-eureka:
-  instance:
-    hostname: localhost
-    instance-id: http://localhost:${server.port}
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+    name: eurekaclient
